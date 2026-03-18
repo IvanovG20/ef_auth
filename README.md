@@ -16,40 +16,28 @@ Custom Auth & Permissions API
 Установка и запуск:
 
 1. Клонируем репозиторий:
-git clone <repo_url>
-cd <repo_folder>
+```git clone git@github.com:IvanovG20/ef_auth.git
+```
 
 2. Создаём виртуальное окружение и устанавливаем зависимости:
-python -m venv venv
+```python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 pip install -r requirements.txt
+```
 
-3. Настраиваем Postgres:
-- Создайте базу данных, пользователя и пароль
-- Настройте DATABASES в settings.py:
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'your_db_name',
-        'USER': 'your_db_user',
-        'PASSWORD': 'your_db_password',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
 
 4. Применяем миграции:
-python manage.py makemigrations
+```python manage.py makemigrations
 python manage.py migrate
+```
 
 5. Запускаем сервер:
 python manage.py runserver
 
 Тестирование:
-
-pytest
+```cd users/
+pytest tests.py```
 
 Примечания:
 
