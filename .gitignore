@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+venv/
+env/
+
+# Django
+*.sqlite3
+media/
+staticfiles/
+*.log
+*.pot
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# MacOS
+.DS_Store
+
+# Pytest
+htmlcov/
+.coverage
+.pytest_cache/
+pytest.ini
