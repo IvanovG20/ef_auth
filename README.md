@@ -5,9 +5,9 @@ Custom Auth & Permissions API
 Функционал:
 
 - Регистрация пользователей (автоматически даётся право view на проекты)
-- Login/Logout через JWT + blacklist токенов
+- Логин/Логаут через JWT + черный список токенов
 - Просмотр проектов (project) с проверкой прав
-- Редактирование проектов (edit) через права
+- Редактирование проектов через права
 - Админ может выдавать права другим пользователям
 - Мягкое удаление пользователей (is_active=False)
 - Кастомные сериализаторы и пермишены
@@ -16,7 +16,8 @@ Custom Auth & Permissions API
 Установка и запуск:
 
 1. Клонируем репозиторий:
-```git clone git@github.com:IvanovG20/ef_auth.git
+```
+git clone git@github.com:IvanovG20/ef_auth.git
 ```
 
 2. Создаём виртуальное окружение и устанавливаем зависимости:
@@ -27,17 +28,19 @@ pip install -r requirements.txt
 ```
 
 
-4. Применяем миграции:
+3. Применяем миграции:
 ```python manage.py makemigrations
 python manage.py migrate
 ```
 
-5. Запускаем сервер:
+4. Запускаем сервер:
 python manage.py runserver
 
-Тестирование:
-```cd users/
-pytest tests.py```
+5. Тестирование:
+```
+cd users/
+pytest tests.py
+```
 
 Примечания:
 
